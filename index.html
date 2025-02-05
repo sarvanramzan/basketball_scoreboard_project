@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Basketball Scoreboard - JS Project</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div id="scoreboard">
+            <div>
+                <h3 class="board-title">Home</h3>
+                <div class="score">
+                    <div id="home-score-text" class="score-text">0</div>
+                </div>
+                <div class="add-points-btns">
+                    <button id="plus-one-point-home" class="btn">+1</button>
+                    <button id="plus-two-point-home" class="btn">+2</button>
+                    <button id="plus-three-point-home" class="btn">+3</button>
+                </div>
+                <button id="newgame-btn" class="btn">New Game</button>
+                <button id="savescore-btn" class="btn">Save Scores</button>
+            </div>
+            <div>
+                <h3 class="board-title">Guest</h3>
+                <div class="score">
+                    <div id="guest-score-text" class="score-text">0</div>
+                </div>
+                <div class="add-points-btns">
+                    <button id="plus-one-point-guest" class="btn">+1</button>
+                    <button id="plus-two-point-guest" class="btn">+2</button>
+                    <button id="plus-three-point-guest" class="btn">+3</button>
+                </div>
+                <div>
+                    <div id="timer" class="border-red">00:00:00</div>
+                    <div>
+                        <i id="start-timer-btn" class="btn btn-timer material-icons">play_arrow</i>
+                        <i id="stop-timer-btn" class="btn btn-timer material-icons">pause</i>
+                        <i id="restart-timer-btn" class="btn btn-timer material-icons">replay</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JS Files -->
+        <script src="index.js" type="module"></script>
+        <script src="functions.js" type="module"></script>
+        <script src="timer.js" type="module"></script>
+    </body>
+</html>
